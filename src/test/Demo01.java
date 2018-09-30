@@ -7,6 +7,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import service.UserService;
+
+import javax.annotation.Resource;
 
 /**
  * @author sairo
@@ -14,8 +17,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:applicationContext.xml")
+@ContextConfiguration("classpath:test/applicationContext.xml")
 public class Demo01 {
+
+    @Resource(name = "userService")
+    private UserService us;
 
     @Test
     public void test01() {
@@ -25,6 +31,11 @@ public class Demo01 {
         User user = (User) ac.getBean("user");
 
         System.out.println(user);
+    }
+
+    @Test
+    public void test02() {
+        us.save();
     }
 
 }
