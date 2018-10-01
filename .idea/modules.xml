@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Spring-AOP/Spring-AOP.iml" filepath="$PROJECT_DIR$/Spring-AOP/Spring-AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-JDBC/Spring-JDBC.iml" filepath="$PROJECT_DIR$/Spring-JDBC/Spring-JDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring02.iml" filepath="$PROJECT_DIR$/Spring02.iml" />
     </modules>
   </component>
