@@ -19,6 +19,7 @@
         <fileset id="fileset" name="ApplicationContext" removed="false">
           <file>file://$MODULE_DIR$/src/applicationContext.xml</file>
           <file>file://$MODULE_DIR$/src/test/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/test/applicationContext01.xml</file>
         </fileset>
       </configuration>
     </facet>
