@@ -19,5 +19,10 @@ public class Demo {
 
 		us.save();
 	}
+
+	@Test
+	public void test01() {
+        System.out.println("djhfsdfi23423543");
+    }
 	
 }
